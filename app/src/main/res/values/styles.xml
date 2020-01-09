@@ -7,5 +7,9 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+    <style name="splash" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="color">#00695C</item>
+    </style>
+
 
 </resources>

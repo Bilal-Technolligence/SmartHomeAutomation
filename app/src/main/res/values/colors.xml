@@ -2,5 +2,25 @@
 <resources>
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorBlack">#000000</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="colorWhite">#ffffff</color>
+
+        <color name="switchTrack">#ffd600</color>
+        <color name="switchTrackDisable">#ffffff</color>
+        <color name="switchTrackActive">#1565c0</color>
+        <color name="switchTrackNormal">#ffffff</color>
+        <color name="switchThumbBgActive">#1b5e20</color>
+        <color name="switchThumbActive">#ad1457</color>
+        <color name="switchThumbkNormal">#ffffff</color>
+
+
+    <style name="MySwitch" parent="@style/Widget.AppCompat.CompoundButton.Switch">
+        <item name="android:textColorPrimaryDisableOnly">#b71c1c</item>
+        <item name="android:colorControlActivated">#1b5e20</item>
+        <item name="android:colorForeground">#f57f17</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat</item>
+    </style>
+
 </resources>
+
