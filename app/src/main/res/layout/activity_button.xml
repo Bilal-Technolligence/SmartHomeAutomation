@@ -206,7 +206,7 @@
                 android:layout_height="50dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="15dp"
-                android:src="@drawable/fridge" />
+                android:src="@drawable/wifi" />
 
             <TextView
                 android:layout_width="wrap_content"
