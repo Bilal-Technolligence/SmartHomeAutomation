@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center_horizontal"
-
     tools:context=".MainActivity">
     <ScrollView
         android:layout_width="match_parent"
@@ -45,12 +44,12 @@
         android:layout_below="@+id/camera">
         <androidx.cardview.widget.CardView
             android:id="@+id/ac"
-            android:layout_height="130dp"
+            android:layout_height="125dp"
             android:layout_width="170dp"
             android:layout_marginTop="4dp"
             android:layout_alignParentLeft="true"
             android:layout_weight="10"
-            app:cardCornerRadius="20dp"
+            app:cardCornerRadius="10dp"
             android:layout_marginLeft="10dp"
             android:padding="5dp"
             app:cardBackgroundColor="#000000">
@@ -87,12 +86,12 @@
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
             android:id="@+id/tv"
-            android:layout_height="130dp"
+            android:layout_height="125dp"
             android:layout_width="170dp"
             android:layout_marginTop="4dp"
             android:layout_alignParentRight="true"
             android:layout_weight="10"
-            app:cardCornerRadius="20dp"
+            app:cardCornerRadius="10dp"
             android:layout_marginRight="10dp"
             android:padding="5dp"
             app:cardBackgroundColor="#000000">
@@ -141,12 +140,12 @@
         android:layout_below="@+id/buttons1">
         <androidx.cardview.widget.CardView
             android:id="@+id/cardBulb"
-            android:layout_height="130dp"
+            android:layout_height="125dp"
             android:layout_width="170dp"
             android:layout_marginTop="4dp"
             android:layout_alignParentLeft="true"
             android:layout_weight="10"
-            app:cardCornerRadius="20dp"
+            app:cardCornerRadius="10dp"
             android:layout_marginLeft="10dp"
             android:padding="5dp"
             app:cardBackgroundColor="#000000">
@@ -184,12 +183,12 @@
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
             android:id="@+id/washingmachine"
-            android:layout_height="130dp"
+            android:layout_height="125dp"
             android:layout_width="170dp"
             android:layout_marginTop="4dp"
             android:layout_alignParentRight="true"
             android:layout_weight="10"
-            app:cardCornerRadius="20dp"
+            app:cardCornerRadius="10dp"
             android:layout_marginRight="10dp"
             android:padding="5dp"
             app:cardBackgroundColor="#000000">
@@ -238,12 +237,12 @@
         android:layout_below="@+id/buttons2">
         <androidx.cardview.widget.CardView
             android:id="@+id/cardFrig"
-            android:layout_height="130dp"
+            android:layout_height="125dp"
             android:layout_width="170dp"
             android:layout_marginTop="4dp"
             android:layout_alignParentLeft="true"
             android:layout_weight="10"
-            app:cardCornerRadius="20dp"
+            app:cardCornerRadius="10dp"
             android:layout_marginLeft="10dp"
             android:padding="5dp"
             app:cardBackgroundColor="#000000">
@@ -281,12 +280,12 @@
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
             android:id="@+id/wifi"
-            android:layout_height="130dp"
+            android:layout_height="125dp"
             android:layout_width="170dp"
             android:layout_marginTop="4dp"
             android:layout_alignParentRight="true"
             android:layout_weight="10"
-            app:cardCornerRadius="20dp"
+            app:cardCornerRadius="10dp"
             android:layout_marginRight="10dp"
             android:padding="5dp"
             app:cardBackgroundColor="#000000">
@@ -333,6 +332,7 @@
         android:id="@+id/navigationView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/colorOrange"
         android:layout_gravity="bottom"
         android:layout_marginStart="0dp"
         android:layout_marginEnd="0dp"
