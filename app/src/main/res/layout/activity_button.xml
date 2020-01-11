@@ -7,7 +7,7 @@
     tools:context=".ButtonActivity">
     <androidx.cardview.widget.CardView
         android:id="@+id/tv"
-        android:layout_height="125dp"
+        android:layout_height="145dp"
         android:layout_width="match_parent"
         app:cardCornerRadius="10dp"
         android:layout_margin="15dp"
@@ -44,7 +44,7 @@
     </androidx.cardview.widget.CardView>
     <androidx.cardview.widget.CardView
         android:id="@+id/ac"
-        android:layout_height="125dp"
+        android:layout_height="145dp"
         android:layout_width="match_parent"
         app:cardCornerRadius="10dp"
         android:layout_margin="15dp"
@@ -80,7 +80,7 @@
     </androidx.cardview.widget.CardView>
     <androidx.cardview.widget.CardView
         android:id="@+id/light"
-        android:layout_height="125dp"
+        android:layout_height="145dp"
         android:layout_width="match_parent"
         app:cardCornerRadius="10dp"
         android:layout_margin="15dp"
@@ -116,7 +116,7 @@
     </androidx.cardview.widget.CardView>
     <androidx.cardview.widget.CardView
         android:id="@+id/washing"
-        android:layout_height="125dp"
+        android:layout_height="145dp"
         android:layout_width="match_parent"
         app:cardCornerRadius="10dp"
         android:layout_margin="15dp"
@@ -152,7 +152,7 @@
     </androidx.cardview.widget.CardView>
     <androidx.cardview.widget.CardView
         android:id="@+id/fridge"
-        android:layout_height="125dp"
+        android:layout_height="145dp"
         android:layout_width="match_parent"
         app:cardCornerRadius="10dp"
         android:layout_margin="15dp"
@@ -170,7 +170,7 @@
                 android:layout_height="50dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="15dp"
-                android:src="@drawable/wifi" />
+                android:src="@drawable/fridge" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -188,7 +188,7 @@
     </androidx.cardview.widget.CardView>
     <androidx.cardview.widget.CardView
         android:id="@+id/wifi"
-        android:layout_height="125dp"
+        android:layout_height="145dp"
         android:layout_width="match_parent"
         app:cardCornerRadius="10dp"
         android:layout_margin="15dp"
@@ -223,30 +223,30 @@
 
     </androidx.cardview.widget.CardView>
 
-    <androidx.cardview.widget.CardView
+    <com.google.android.material.circularreveal.cardview.CircularRevealCardView
         android:id="@+id/btnPower"
-        android:layout_width="100dp"
-        android:layout_height="92dp"
-        app:cardBackgroundColor="@color/colorOrange"
-        app:cardCornerRadius="50dp"
-        android:layout_above="@+id/navigationView"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:background="@color/colorOrange"
-        android:layout_marginBottom="20dp"
-        >
+        android:layout_height="120dp"
+        android:layout_width="match_parent"
+        app:cardCornerRadius="60dp"
+        android:layout_marginTop="290dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginRight="140dp"
+        android:padding="5dp"
+        app:cardBackgroundColor="#000000">
+
         <androidx.appcompat.widget.AppCompatImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:src="@drawable/ic_power_settings_new_black_24dp"
             android:layout_gravity="center"/>
 
-    </androidx.cardview.widget.CardView>
+    </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/navigationView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+
         android:background="@color/colorOrange"
         android:layout_gravity="bottom"
         android:layout_marginStart="0dp"
