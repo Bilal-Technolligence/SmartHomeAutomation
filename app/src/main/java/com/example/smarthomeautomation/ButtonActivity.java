@@ -74,10 +74,13 @@ public class ButtonActivity extends AppCompatActivity {
         power.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(value.equals("0"))
+                if(value.equals("0")) {
                     dref.child("Button").child(type).setValue(1);
-                else
+                    Toast.makeText(getApplicationContext() , type.substring(0,1).toUpperCase()+type.substring(1) +" on",Toast.LENGTH_LONG).show();
+                }else {
                     dref.child("Button").child(type).setValue(0);
+                    Toast.makeText(getApplicationContext() , type.substring(0,1).toUpperCase()+type.substring(1) +" off",Toast.LENGTH_LONG).show();
+                }
             }
         });
     }
