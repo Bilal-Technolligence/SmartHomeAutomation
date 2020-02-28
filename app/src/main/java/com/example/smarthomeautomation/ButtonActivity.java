@@ -20,7 +20,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 public class ButtonActivity extends AppCompatActivity {
-    CardView ac, tv, light, washing, fridge, wifi , power;
+    CardView fans, tv, light, washing, fridge, wifi , power;
     DatabaseReference dref = FirebaseDatabase.getInstance().getReference();
     String value;
 
@@ -31,31 +31,19 @@ public class ButtonActivity extends AppCompatActivity {
         Intent i = getIntent();
         final String type = i.getStringExtra("type");
 
-        ac = (CardView) findViewById(R.id.ac);
-        tv = (CardView) findViewById(R.id.tv);
+        fans = (CardView) findViewById(R.id.fan);
         light = (CardView) findViewById(R.id.light);
-        washing = (CardView) findViewById(R.id.washing);
-        fridge = (CardView) findViewById(R.id.fridge);
-        wifi = (CardView) findViewById(R.id.wifi);
         power = (CardView) findViewById(R.id.btnPower);
-        ac.setVisibility(View.GONE);
+        fans.setVisibility(View.GONE);
         tv.setVisibility(View.GONE);
         light.setVisibility(View.GONE);
         washing.setVisibility(View.GONE);
         fridge.setVisibility(View.GONE);
         wifi.setVisibility(View.GONE);
-        if (type.equals("ac"))
-            ac.setVisibility(View.VISIBLE);
+        if (type.equals("fan"))
+            fans.setVisibility(View.VISIBLE);
         if (type.equals("light"))
             light.setVisibility(View.VISIBLE);
-        if (type.equals("washingmachine"))
-            washing.setVisibility(View.VISIBLE);
-        if (type.equals("tv"))
-            tv.setVisibility(View.VISIBLE);
-        if (type.equals("router"))
-            wifi.setVisibility(View.VISIBLE);
-        if (type.equals("fridge"))
-            fridge.setVisibility(View.VISIBLE);
         dref.child("Button").child(type).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {

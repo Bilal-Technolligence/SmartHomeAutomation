@@ -4,15 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#ffffff"
     tools:context=".ButtonActivity">
+
     <androidx.cardview.widget.CardView
-        android:id="@+id/tv"
-        android:layout_height="145dp"
+        android:id="@+id/fan"
+        android:layout_height="220dp"
         android:layout_width="match_parent"
         app:cardCornerRadius="10dp"
         android:layout_margin="15dp"
         android:padding="5dp"
-        app:cardBackgroundColor="#000000">
+        app:cardBackgroundColor="#239DB3">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -21,12 +23,12 @@
             android:padding="20dp">
 
             <ImageView
-                android:id="@+id/tv1"
-                android:layout_width="70dp"
-                android:layout_height="50dp"
+                android:id="@+id/fan1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="15dp"
-                android:src="@drawable/smarttelevesion1" />
+                android:src="@drawable/fan" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -34,45 +36,10 @@
                 android:layout_below="@+id/imageairconditionar"
                 android:layout_alignParentLeft="true"
                 android:layout_gravity="center"
+                android:layout_marginTop="10dp"
                 android:text="Smart Tv"
                 android:textColor="@color/colorWhite"
-                android:textSize="16dp" />
-
-
-        </LinearLayout>
-
-    </androidx.cardview.widget.CardView>
-    <androidx.cardview.widget.CardView
-        android:id="@+id/ac"
-        android:layout_height="145dp"
-        android:layout_width="match_parent"
-        app:cardCornerRadius="10dp"
-        android:layout_margin="15dp"
-        android:padding="5dp"
-        app:cardBackgroundColor="#000000">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:padding="20dp">
-
-            <ImageView
-                android:layout_width="70dp"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="15dp"
-                android:src="@drawable/airconditioner" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/imageairconditionar"
-                android:layout_alignParentLeft="true"
-                android:layout_gravity="center"
-                android:text="Air Conditioner"
-                android:textColor="@color/colorWhite"
-                android:textSize="16dp" />
+                android:textSize="20dp" />
 
 
         </LinearLayout>
@@ -80,22 +47,23 @@
     </androidx.cardview.widget.CardView>
     <androidx.cardview.widget.CardView
         android:id="@+id/light"
-        android:layout_height="145dp"
+        android:layout_height="220dp"
         android:layout_width="match_parent"
         app:cardCornerRadius="10dp"
         android:layout_margin="15dp"
         android:padding="5dp"
-        app:cardBackgroundColor="#000000">
+        app:cardBackgroundColor="#239DB3">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
+            android:gravity="center_vertical"
             android:padding="20dp">
 
             <ImageView
-                android:layout_width="70dp"
-                android:layout_height="50dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="15dp"
                 android:src="@drawable/lightbulb" />
@@ -106,129 +74,23 @@
                 android:layout_below="@+id/imageairconditionar"
                 android:layout_alignParentLeft="true"
                 android:layout_gravity="center"
+                android:layout_marginTop="10dp"
                 android:text="Light"
                 android:textColor="@color/colorWhite"
-                android:textSize="16dp" />
+                android:textSize="25dp" />
 
 
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
-    <androidx.cardview.widget.CardView
-        android:id="@+id/washing"
-        android:layout_height="145dp"
-        android:layout_width="match_parent"
-        app:cardCornerRadius="10dp"
-        android:layout_margin="15dp"
-        android:padding="5dp"
-        app:cardBackgroundColor="#000000">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:padding="20dp">
-
-            <ImageView
-                android:layout_width="70dp"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="15dp"
-                android:src="@drawable/washingmachine" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/imageairconditionar"
-                android:layout_alignParentLeft="true"
-                android:layout_gravity="center"
-                android:text="Wash Machine"
-                android:textColor="@color/colorWhite"
-                android:textSize="16dp" />
-
-
-        </LinearLayout>
-
-    </androidx.cardview.widget.CardView>
-    <androidx.cardview.widget.CardView
-        android:id="@+id/fridge"
-        android:layout_height="145dp"
-        android:layout_width="match_parent"
-        app:cardCornerRadius="10dp"
-        android:layout_margin="15dp"
-        android:padding="5dp"
-        app:cardBackgroundColor="#000000">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:padding="20dp">
-
-            <ImageView
-                android:layout_width="70dp"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="15dp"
-                android:src="@drawable/fridge" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/imageairconditionar"
-                android:layout_alignParentLeft="true"
-                android:layout_gravity="center"
-                android:text="Refrigerator"
-                android:textColor="@color/colorWhite"
-                android:textSize="16dp" />
-
-
-        </LinearLayout>
-
-    </androidx.cardview.widget.CardView>
-    <androidx.cardview.widget.CardView
-        android:id="@+id/wifi"
-        android:layout_height="145dp"
-        android:layout_width="match_parent"
-        app:cardCornerRadius="10dp"
-        android:layout_margin="15dp"
-        android:padding="5dp"
-        app:cardBackgroundColor="#000000">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:padding="20dp">
-
-            <ImageView
-                android:layout_width="70dp"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="15dp"
-                android:src="@drawable/wifi" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/imageairconditionar"
-                android:layout_alignParentLeft="true"
-                android:layout_gravity="center"
-                android:text="Router"
-                android:textColor="@color/colorWhite"
-                android:textSize="16dp" />
-
-
-        </LinearLayout>
-
-    </androidx.cardview.widget.CardView>
 
     <com.google.android.material.circularreveal.cardview.CircularRevealCardView
         android:id="@+id/btnPower"
         android:layout_height="120dp"
         android:layout_width="match_parent"
         app:cardCornerRadius="60dp"
-        android:layout_marginTop="290dp"
+        android:layout_marginTop="310dp"
         android:layout_marginLeft="140dp"
         android:layout_marginRight="140dp"
         android:padding="5dp"
@@ -242,18 +104,4 @@
 
     </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/navigationView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-
-        android:background="@color/colorOrange"
-        android:layout_gravity="bottom"
-        android:layout_marginStart="0dp"
-        android:layout_marginEnd="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_alignParentBottom="true"
-        app:menu="@menu/navigation" />
 </RelativeLayout>

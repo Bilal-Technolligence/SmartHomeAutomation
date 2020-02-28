@@ -5,6 +5,7 @@ import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
+import android.hardware.Sensor;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.Animation;
@@ -17,21 +18,19 @@ import android.widget.Toast;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-public class MainActivity extends BaseClass {
-    CardView airconditionar, tv, router, washmachine, lightbulb, fridge;
+public class MainActivity extends AppCompatActivity {
+    CardView Camera, Fans, Sensors, lightbulb, fridge;
     ImageView bulblighton;
     DatabaseReference dref= FirebaseDatabase.getInstance().getReference();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
-      //  setContentView( R.layout.activity_main );
-        lightbulb = findViewById( R.id.cardBulb );
-        airconditionar = findViewById( R.id.ac );
-        washmachine = findViewById( R.id.washingmachine );
-        tv = findViewById( R.id.tv );
-        router = findViewById( R.id.wifi );
-        fridge = findViewById( R.id.cardFrig );
+       setContentView( R.layout.activity_main );
+        lightbulb = findViewById( R.id.lights );
+        Camera = findViewById( R.id.camera );
+        Sensors = findViewById( R.id.sensors );
+        Fans = findViewById( R.id.fans );
 
         lightbulb.setOnClickListener( new View.OnClickListener() {
             @Override
@@ -41,57 +40,26 @@ public class MainActivity extends BaseClass {
                 startActivity(i);
             }
         } );
-        airconditionar.setOnClickListener(new View.OnClickListener() {
+        Fans.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(MainActivity.this , ButtonActivity.class);
-                i.putExtra("type" , "ac");
+                i.putExtra("type" , "fan");
                 startActivity(i);
             }
         });
-        washmachine.setOnClickListener(new View.OnClickListener() {
+
+        Sensors.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this , ButtonActivity.class);
-                i.putExtra("type" , "washingmachine");
+                Intent i = new Intent(MainActivity.this , SensorsActivity.class);
+               // i.putExtra("type" , "tv");
                 startActivity(i);
             }
         });
-        tv.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this , ButtonActivity.class);
-                i.putExtra("type" , "tv");
-                startActivity(i);
-            }
-        });
-        router.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this , ButtonActivity.class);
-                i.putExtra("type" , "router");
-                startActivity(i);
-            }
-        });
-        fridge.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this , ButtonActivity.class);
-                i.putExtra("type" , "fridge");
-                startActivity(i);
-            }
-        });
+
 
 
     }
 
-    @Override
-    int getContentViewId() {
-        return R.layout.activity_main;
-    }
-
-    @Override
-    int getNavigationMenuItemId() {
-        return R.id.nav_home;
-    }
 }
