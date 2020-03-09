@@ -35,11 +35,7 @@ public class ButtonActivity extends AppCompatActivity {
         light = (CardView) findViewById(R.id.light);
         power = (CardView) findViewById(R.id.btnPower);
         fans.setVisibility(View.GONE);
-        tv.setVisibility(View.GONE);
         light.setVisibility(View.GONE);
-        washing.setVisibility(View.GONE);
-        fridge.setVisibility(View.GONE);
-        wifi.setVisibility(View.GONE);
         if (type.equals("fan"))
             fans.setVisibility(View.VISIBLE);
         if (type.equals("light"))
