@@ -14,7 +14,7 @@
         <ImageView
             android:layout_width="70dp"
             android:layout_height="70dp"
-            android:src="@drawable/logoimage"
+            android:src="@drawable/ic_notifications_black_24dp"
             />
         <LinearLayout
             android:id="@+id/linearLayout"
@@ -29,19 +29,25 @@
                 android:text="Emergency Alert"
                 android:textStyle="bold"
                 android:id="@+id/notification_title"
+                android:textColor="@color/colorBlack"
+                android:textSize="18dp"
+
                 />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="Notification Description"
                 android:id="@+id/notification_description"
+                android:textColor="@color/colorBlack"
+                android:textSize="14dp"
                 />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="datetime"
-                android:textSize="10dp"
+                android:textSize="12dp"
                 android:id="@+id/notification_datetime"
+                android:textColor="@color/colorBlack"
                 />
         </LinearLayout>
     </LinearLayout>
