@@ -27,8 +27,9 @@ public class SplashScreen extends AppCompatActivity {
                 try {
                     sleep( 5000 );
 
-                    Intent intent = new Intent(getApplicationContext(), MainActivity.class );
+                    Intent intent = new Intent(getApplicationContext(), PagerActivity.class );
                     startActivity( intent );
+                    startService(new Intent(SplashScreen.this,MyService.class));
                     finish();
                     super.run();
 
