@@ -83,7 +83,8 @@
                             android:layout_alignParentLeft="true"
                             android:gravity="center_vertical"
                             android:layout_marginLeft="2dp"
-                            android:text="25 °C "
+                            android:id="@+id/txttemp"
+                            android:text=""
                             android:textColor="#000000"
                             android:textSize="40dp" />
                     </LinearLayout>
@@ -130,7 +131,8 @@
                             android:layout_alignParentLeft="true"
                             android:gravity="center_vertical"
                             android:layout_marginLeft="2dp"
-                            android:text="30 %   "
+                            android:text=""
+                            android:id="@+id/txthum"
                             android:textColor="#000000"
                             android:textSize="40dp" />
                     </LinearLayout>
