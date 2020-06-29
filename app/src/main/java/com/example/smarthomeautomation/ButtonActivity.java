@@ -31,9 +31,9 @@ public class ButtonActivity extends AppCompatActivity {
         Intent i = getIntent();
         final String type = i.getStringExtra("type");
 
-        fans = (CardView) findViewById(R.id.fan);
-        light = (CardView) findViewById(R.id.light);
-        power = (CardView) findViewById(R.id.btnPower);
+        fans = findViewById(R.id.fan);
+        light = findViewById(R.id.light);
+        power = findViewById(R.id.btnPower);
         fans.setVisibility(View.GONE);
         light.setVisibility(View.GONE);
         if (type.equals("fan"))
@@ -59,10 +59,10 @@ public class ButtonActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(value.equals("0")) {
-                    dref.child("Button").child(type).setValue(1);
+                    dref.child("Button").child(type).setValue("1").toString();
                     Toast.makeText(getApplicationContext() , type.substring(0,1).toUpperCase()+type.substring(1) +" on",Toast.LENGTH_LONG).show();
                 }else {
-                    dref.child("Button").child(type).setValue(0);
+                    dref.child("Button").child(type).setValue("0").toString();
                     Toast.makeText(getApplicationContext() , type.substring(0,1).toUpperCase()+type.substring(1) +" off",Toast.LENGTH_LONG).show();
                 }
             }

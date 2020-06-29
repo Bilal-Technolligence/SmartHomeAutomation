@@ -77,7 +77,7 @@
                         android:textSize="20dp" />
 
                     <TextView
-                        android:id="@+id/temp"
+                        android:id="@+id/temper"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_alignParentLeft="true"
@@ -125,7 +125,7 @@
                         android:textSize="20dp" />
 
                     <TextView
-                        android:id="@+id/hum"
+                        android:id="@+id/humd"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_alignParentLeft="true"

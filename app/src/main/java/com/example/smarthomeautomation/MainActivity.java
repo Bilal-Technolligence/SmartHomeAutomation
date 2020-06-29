@@ -38,8 +38,8 @@ public class MainActivity extends AppCompatActivity {
         Camera = findViewById( R.id.camera );
         Sensors = findViewById( R.id.sensors );
         Fans = findViewById( R.id.fans );
-        temperature = findViewById( R.id.temp );
-        humidity = findViewById( R.id.hum );
+        temperature = findViewById( R.id.temper );
+        humidity = findViewById( R.id.humd );
 
         dref.child("sensor").addValueEventListener(new ValueEventListener() {
             @Override
@@ -47,11 +47,11 @@ public class MainActivity extends AppCompatActivity {
                 if (dataSnapshot.exists()) {
 
 
-                    String tempt = dataSnapshot.child("Temperature").getValue().toString();
-                    String humd = dataSnapshot.child("Humidity").getValue().toString();
+                    String temp = dataSnapshot.child("Temperature").getValue().toString();
+                    String hum = dataSnapshot.child("Humidity").getValue().toString();
 
-                    temperature.setText(tempt+" °C");
-                    humidity.setText(humd+" %");
+                    temperature.setText(temp+" °C");
+                    humidity.setText(hum+" %");
                 }
             }
 
